@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+deamon.so
+deamon.dylib
+deamon.dll
+deamon.a
+deamon.lib
+deamon-test-*
+*.exe
+*.o
+*.obj
+*.lst
+peer-deamon

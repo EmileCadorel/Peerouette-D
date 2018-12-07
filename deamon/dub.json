@@ -1,0 +1,19 @@
+{
+    "name": "peer-deamon",
+    "authors": [
+	"emile"
+    ],
+    "description": "A minimal D application.",
+    "copyright": "Copyright © 2018, emile",
+    "license": "proprietary",
+    "dependencies": {
+	"gfm:assimp" : "~>6.0",
+	"gfm:opengl" : "~>6.0",
+	"gfm:math" : "~>6.0",
+	"gfm:sdl2" : "~>6.0",
+	"netez-d" : "*",
+	"libX11" : "*",
+	"ffmpeg-d": "~>3.1.1"
+    },
+    "libs": ["Xext"]
+}

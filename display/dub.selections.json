@@ -1,0 +1,14 @@
+{
+	"fileVersion": 1,
+	"versions": {
+		"derelict-assimp3": "1.3.0",
+		"derelict-gl3": "1.0.24",
+		"derelict-sdl2": "1.9.7",
+		"derelict-util": "2.0.6",
+		"ffmpeg-d": "3.1.1",
+		"gfm": "6.2.13",
+		"libX11": "~master",
+		"netez-d": "~master",
+		"peer-deamon": "~master"
+	}
+}
