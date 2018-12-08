@@ -34,7 +34,7 @@ import ffmpeg.libavutil.avutil;
     int avcodec_encode_video (AVCodecContext * avctx, ubyte *	buf, int buf_size,  AVFrame * pict); 			
 }
 
-public immutable int __FPS__ = 50;
+public immutable int __FPS__ = 120;
 immutable float __SCALING__ = 1;
 
 class BufferS {

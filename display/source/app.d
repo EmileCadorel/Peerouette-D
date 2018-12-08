@@ -21,8 +21,10 @@ class Session : netez.ClientSession!Protocol {
 	auto frameBuffer = new ubyte [size * 4];
 	window.initTexture (data);
 	
-	auto begin = Clock.currTime ();
+	//auto begin = Clock.currTime ();
 	while (stream.isAlive ()) {
+	    auto time = stream.read!string ();	    
+	    auto date = SysTime.fromISOString (time);
 	    auto len = *(cast (ulong*) stream.rawRead (ulong.sizeof).ptr);	    
 	    stream.rawRead (data [0 .. len]);
 
@@ -38,8 +40,8 @@ class Session : netez.ClientSession!Protocol {
 	    
 	    
 	    auto end = Clock.currTime ();
-	    writeln ("Frame : ", end - begin, " size : ", len);
-	    begin = Clock.currTime ();
+	    writeln ("Frame : ", end - date, " size : ", len);
+	    //begin = Clock.currTime ();
 	}
 	
 	Buffer.flush ();    

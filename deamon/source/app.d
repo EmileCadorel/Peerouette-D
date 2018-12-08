@@ -41,6 +41,8 @@ class Session : netez.ServSession!Protocol {
 			stream = this.proto.frame.open ();
 		    }
 
+		    auto beginSend = Clock.currTime;
+		    stream.write (beginSend.toISOString ());
 		    stream.write (cast (byte[]) msg);
 		}
 	    );
