@@ -24,7 +24,7 @@ class Session : netez.ClientSession!Protocol {
 	//auto begin = Clock.currTime ();
 	while (stream.isAlive ()) {
 	    auto time = stream.read!string ();	    
-	    auto date = SysTime.fromISOString (time);
+	    auto date = SysTime.fromISOExtString (time);
 	    auto len = *(cast (ulong*) stream.rawRead (ulong.sizeof).ptr);	    
 	    stream.rawRead (data [0 .. len]);
 

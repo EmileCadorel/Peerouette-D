@@ -57,7 +57,7 @@ class BufferS {
     private AVCodecParserContext *parser;
    
     this () {
-	this.file = File ("out.h264", "wb");
+	//this.file = File ("out.h264", "wb");
     }
 
     void init (int width, int height, bool willEncode = true) {
@@ -238,7 +238,7 @@ class BufferS {
     }
 
     void addFrame (ubyte [] data) {
-	file.rawWrite (data);
+	//file.rawWrite (data);
     }
     
     void flush () {
